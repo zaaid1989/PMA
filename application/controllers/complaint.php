@@ -540,7 +540,7 @@ class Complaint extends CI_Controller {
 	
 	public function update_city_insert() {
 		$query="update  `tbl_cities` SET 	
-			  `city_name`						='".$_POST['city_name']."' ,
+			  `city_name`						='".addslashes($_POST['city_name'])."' ,
 			  `fk_office_id`							='".$_POST['office_name']."'
 			   where pk_city_id ='".$_POST['pk_city_id']."'";
 			  $dbres = $this->db->query($query);
@@ -548,7 +548,7 @@ class Complaint extends CI_Controller {
     }
 	public function update_area_insert() {
 		$query="update  `tbl_area` SET 	
-			  `area`						='".$_POST['area_name']."' ,
+			  `area`						='".addslashes($_POST['area_name'])."' ,
 			  `fk_city_id`							='".$_POST['city_name']."'
 			   where pk_area_id ='".$_POST['pk_area_id']."'";
 			  $dbres = $this->db->query($query);
@@ -584,7 +584,7 @@ class Complaint extends CI_Controller {
 		if (isset($_POST['Salesman'])) $salesman=1;
 		$query="update  `tbl_sub_menu` SET 	
 			  `fk_main_menu_id`					='".$_POST['fk_main_menu_id']."' ,
-			  `sub_menu`						='".$_POST['sub_menu']."' ,
+			  `sub_menu`						='".addslashes($_POST['sub_menu'])."' ,
 			  `pre`								='".$_POST['pre']."' ,
 			  `post`							='".$_POST['post']."' ,
 			  `icon`							='".$_POST['icon']."' ,
@@ -633,7 +633,7 @@ class Complaint extends CI_Controller {
 		
 		$query="update  `tbl_main_menu` SET 	
 			  `order`							='".$_POST['order']."' ,
-			  `main_menu`						='".$_POST['main_menu']."' ,
+			  `main_menu`						='".addslashes($_POST['main_menu'])."' ,
 			  `icon`							='".$_POST['icon']."'
 			   where pk_main_menu_id ='".$_POST['pk_main_menu_id']."'";
 			  $dbres = $this->db->query($query);
@@ -669,7 +669,7 @@ class Complaint extends CI_Controller {
 	
 	public function update_policy() {
 		$query="UPDATE `tbl_policies` SET 	
-			  `policy_title`		='".urlencode($_POST['policy_title'])."',
+			  `policy_title`		='".addslashes($_POST['policy_title'])."',
 			  `order`				='".$_POST['order']."',
 			  `policy`				='".$_POST['policy']."'
 			  WHERE `pk_policy_id`	='".$_POST['pk_policy_id']."'";
@@ -709,8 +709,8 @@ class Complaint extends CI_Controller {
 								`target_date`				=	'".$this->profile_model->change_date_to_mysql_style($_POST['target_date'])."',
 								`investment`				=	'".$_POST['investment']."',
 								`sales_per_month`			=	'".$_POST['sales_per_month']."',
-								`strategy`					=	'".urlencode($_POST['strategy'])."',
-								`tactics`					=	'".urlencode($_POST['tactics'])."',
+								`strategy`					=	'".addslashes($_POST['strategy'])."',
+								`tactics`					=	'".addslashes($_POST['tactics'])."',
 								`strategy_status`			=	'1',
 					   			`fk_project_id`				= 	'".$_POST['fk_project_id']."'
 						WHERE 	`pk_project_strategy_id`	=	'".$_POST['pk_project_strategy_id']."'";
@@ -958,7 +958,7 @@ class Complaint extends CI_Controller {
 					  `date`						='" . $this->profile_model->change_date_to_mysql_style($_POST['application_date']) . "  00:00:00' AND 
 					  `fk_fine_code_id`				='" . $_POST['fine'] . "' AND 
 					  `amount`						='" . $_POST['amount'] . "' AND 
-					  `comments`					='" . urlencode($_POST['official_comments']) . "' AND 
+					  `comments`					='" . addslashes($_POST['official_comments']) . "' AND 
 					  `status`						='Pending'
 					  ";
 				$fq = $this->db->query($fquery);
@@ -1141,7 +1141,7 @@ class Complaint extends CI_Controller {
 					  `date`						='" . $this->profile_model->change_date_to_mysql_style($_POST['application_date']) . "  00:00:00' AND 
 					  `fk_fine_code_id`				='" . $_POST['fine'] . "' AND 
 					  `amount`						='" . $_POST['amount'] . "' AND 
-					  `comments`					='" . urlencode($_POST['official_comments']) . "' AND 
+					  `comments`					='" . addslashes($_POST['official_comments']) . "' AND 
 					  `status`						='"	. $fine_status ."'
 					  ";
 				$fq = $this->db->query($fquery);
@@ -1210,13 +1210,13 @@ class Complaint extends CI_Controller {
 		if(isset($_POST['comments_employee']))
 		{
 			$query="update `tbl_fine` SET 	
-			  `comments_employee`					='".urlencode($_POST['comments_employee'])."'
+			  `comments_employee`					='".addslashes($_POST['comments_employee'])."'
 			  where pk_fine_id = '".$_POST['pk_fine_id']."'";
 		}
 		else
 		{
 			$query="update `tbl_fine` SET 	
-			  `comments`					='".urlencode($_POST['comments'])."',
+			  `comments`					='".addslashes($_POST['comments'])."',
 			  `status`						='".$_POST['status']."'
 			  where pk_fine_id = '".$_POST['pk_fine_id']."'";
 		}
@@ -1227,13 +1227,13 @@ class Complaint extends CI_Controller {
 		if(isset($_POST['employee_comments']))
 		{
 			$query="update `tbl_warning_letters` SET 	
-			  `employee_comments`					='".urlencode($_POST['employee_comments'])."'
+			  `employee_comments`					='".addslashes($_POST['employee_comments'])."'
 			  where pk_warning_letter_id = '".$_POST['pk_warning_letter_id']."'";
 		}
 		else
 		{
 			$query="update `tbl_warning_letters` SET 	
-			  `official_comments`					='".urlencode($_POST['official_comments'])."',
+			  `official_comments`					='".addslashes($_POST['official_comments'])."',
 			  `status`						='".$_POST['status']."'
 			  where pk_warning_letter_id = '".$_POST['pk_warning_letter_id']."'";
 		}
@@ -1642,8 +1642,8 @@ class Complaint extends CI_Controller {
     }
 	public function update_news_insert() {
 		$query="update  `tbl_news` SET 	
-			  `news_title`				='".urlencode($_POST['news_title'])."',
-			  `news_description`		='".urlencode($_POST['news_description'])."',
+			  `news_title`				='".addslashes($_POST['news_title'])."',
+			  `news_description`		='".addslashes($_POST['news_description'])."',
 			  `fk_office_id`		='".$_POST['office']."'
 			  
 			  where `pk_news_id` ='".$_POST['pk_news_id']."'";
@@ -3370,7 +3370,7 @@ class Complaint extends CI_Controller {
 								`warranty_months`		=	'".$_POST['warranty_months']."',
 								`warranty_start_date`	=	'".$this->profile_model->change_date_to_mysql_style($_POST['warranty_start_date'])."',
 								`status`				=	'".$_POST['status']."',
-								`details`				=	'".$_POST['description']."'
+								`details`				=	'".addslashes($_POST['description'])."'
 								 where pk_instrument_id = '".$_POST['pk_instrument_id']."'";
 			  //echo $query;exit;
 			  $dbres = $this->db->query($query);
@@ -3408,7 +3408,7 @@ class Complaint extends CI_Controller {
 								`warranty_months`		=	'".$_POST['warranty_months']."',
 								`warranty_start_date`	=	'".$this->profile_model->change_date_to_mysql_style($_POST['warranty_start_date'])."',
 								`status`				=	'".$_POST['status']."',
-								`details`				=	'".$_POST['description']."'
+								`details`				=	'".addslashes($_POST['description'])."'
 								
 								 where pk_instrument_id = '".$_POST['pk_instrument_id']."'";
 			  //echo $query;exit;
@@ -3653,7 +3653,7 @@ class Complaint extends CI_Controller {
 	public function update_product_insert()
 	{
 			 $query="update  `tbl_products` SET 	
-			  `product_name`						='".$_POST['product_name']."',
+			  `product_name`						='".addslashes($_POST['product_name'])."',
 			  `fk_category_id`						='".$_POST['category_name']."'
 			  where pk_product_id					='".$_POST['pk_product_id']."'
 			  ";
@@ -3717,7 +3717,7 @@ class Complaint extends CI_Controller {
 			  }
 			  $query.="`Business Project`					=	'".$_POST['Business_Project']."',
 						`project_type`						=	'".$_POST['project_type']."',
-					   `Project Description`				=	'".$_POST['Project_Description']."'
+					   `Project Description`				=	'".addslashes($_POST['Project_Description'])."'
 					   where pk_businessproject_id			= 	'".$_POST['businessproject_hidden_id']."'";
 			
 			  //echo $query;exit;
@@ -3867,9 +3867,9 @@ class Complaint extends CI_Controller {
 						 `fk_complaint_id`		=	'0',";
 			}
 				$query.="
-								`priority`				=	'".urlencode($_POST['business_description'][$key])."',
-								`summery`				=	'".urlencode($_POST['summery'][$key])."',
-								`next_plan`				=	'".urlencode($_POST['next_plan'][$key])."'
+								`priority`				=	'".addslashes($_POST['business_description'][$key])."',
+								`summery`				=	'".addslashes($_POST['summery'][$key])."',
+								`next_plan`				=	'".addslashes($_POST['next_plan'][$key])."'
 								where pk_dvr_id			=	'".$dvr_id."'
 							  ";
 			  //echo $query;exit;
@@ -3938,7 +3938,7 @@ class Complaint extends CI_Controller {
 			 $query="update tbl_vs SET 				  
 								`start_time`			=	'".$re_start_hour."',
 								`end_time`				=	'".$re_end_hour."',
-								`summery`				=	'".urlencode($_POST['summery'][$key])."'
+								`summery`				=	'".addslashes($_POST['summery'][$key])."'
 								where pk_vs_id			=	'".$vs_id."'
 							  ";
 			  /*`fk_business_id`		=	'".$_POST['business'][$key]."',*/
@@ -4059,14 +4059,14 @@ class Complaint extends CI_Controller {
 	public function update_vendor_insert()
 	{
 			$query="update tbl_vendors SET 				  
-								`vendor_name`				=	'".$_POST['vendor_name']."',
+								`vendor_name`				=	'".addslashes($_POST['vendor_name'])."',
 								`email`						=	'".$_POST['email']."',
-								`address`					=	'".$_POST['address']."',
+								`address`					=	'".addslashes($_POST['address'])."',
 								`country`					=	'".$_POST['country']."',
-								`conatact_person`			=	'".$_POST['conatact_person']."',
+								`conatact_person`			=	'".addslashes($_POST['conatact_person'])."',
 								`contact_no_office`			=	'".$_POST['contact_no_office']."',
 								`contact_no_Mobile`  		=	'".$_POST['contact_no_Mobile']."',
-								`city`						=	'".$_POST['city']."'
+								`city`						=	'".addslashes($_POST['city'])."'
 								 where pk_vendor_id = '".$_POST['pk_vendor_id']."'";
 			  //echo $query;exit;
 			  $dbres = $this->db->query($query);
@@ -4276,13 +4276,13 @@ class Complaint extends CI_Controller {
 						$query.="`solution_date`								=	'".$this->profile_model->change_date_to_mysql_style($_POST['solution_date'])."',";
 			 }
 				$query.="		`reporting_time`								=	'".$_POST['reporting_time']."',
-								`ps_name`										=	'".$_POST['ps_name']."',
-								`customer_signing_complaint_form`				=	'".urlencode($_POST['customer_signing_complaint_form'])."',
-								`customer_mobile_signing_complaint_form`		=	'".urlencode($_POST['customer_mobile_signing_complaint_form'])."',
-								`customer_designation_signing_complaint_form`	=	'".urlencode($_POST['customer_designation_signing_complaint_form'])."',
+								`ps_name`										=	'".addslashes($_POST['ps_name'])."',
+								`customer_signing_complaint_form`				=	'".addslashes($_POST['customer_signing_complaint_form'])."',
+								`customer_mobile_signing_complaint_form`		=	'".addslashes($_POST['customer_mobile_signing_complaint_form'])."',
+								`customer_designation_signing_complaint_form`	=	'".addslashes($_POST['customer_designation_signing_complaint_form'])."',
 								`solution_time`									=	'".$_POST['solution_time']."',
-								`problem_cause`									=	'".$_POST['problem_cause']."',
-								`customer_feedback`								=	'".urlencode($_POST['customer_feedback'])."'
+								`problem_cause`									=	'".addslashes($_POST['problem_cause'])."',
+								`customer_feedback`								=	'".addslashes($_POST['customer_feedback'])."'
 								WHERE
 								`pk_complaint_id`								=	'".$_POST['complaint_id']."'
 								";

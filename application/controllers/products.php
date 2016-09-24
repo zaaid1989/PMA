@@ -451,7 +451,7 @@ print_r('</pre>');
 			/*$query="insert  into `tbl_stock` SET 	
 				  `fk_vendor_id`				=		'".$_POST['vendor_name']."',
 				  `fk_part_id`					=		'".$_POST['part_number']."',
-				  `description`		    		=		'".urlencode($_POST['part_description'])."',
+				  `description`		    		=		'".addslashes($_POST['part_description'])."',
 				  
 				  `stock`						=		'".$_POST['stock_in_quantity']."',
 				  `fk_office_id`				=		'".$_POST['stock_location']."'";
@@ -651,10 +651,10 @@ print_r('</pre>');
 																			  invoice_date = '".$invoice_date."',
 																			  invoice_number = '".$_POST['invoice_number']."',
 																			  equipment_serial = '".$_POST['equipment_serial']."',
-																			  old_inventory_description = '".urlencode($_POST['old_inventory_description'])."',
+																			  old_inventory_description = '".addslashes($_POST['old_inventory_description'])."',
 																			  dc_type = '".$dc_type."',
 																			  dc_number = '".$dc_number."',
-																			  `comments` =	'".urlencode($_POST['comments'])."'"
+																			  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
 		//} // end of else
 		
@@ -746,7 +746,7 @@ print_r('</pre>');
 												  fk_part_id='".$_POST['part_number']."',  
 												  date= '".$date."',
 												  order_number = '".$_POST['order_number']."',
-												  `comments` =	'".urlencode($_POST['comments'])."'
+												  `comments` =	'".addslashes($_POST['comments'])."'
 												  WHERE pk_order_id = '".$_POST['order_hidden_id']."'"
 												  );
 		
@@ -761,11 +761,11 @@ print_r('</pre>');
 		$query="update `tbl_parts` SET 	
 				  `fk_vendor_id`				=		'".$_POST['vendor_name']."',
 				  `fk_product_id`				=		'".$_POST['product_name']."',
-				  `description`		    		=		'".urlencode($_POST['part_description'])."',
+				  `description`		    		=		'".addslashes($_POST['part_description'])."',
 				  `part_number`					=		'".$_POST['part_no']."',
 				  `minimum_quantity`			=		'".$_POST['minimum_qty']."',
 				  `unit_price`					=		'".$_POST['unit_price']."',
-				  `comments`					=		'".urlencode($_POST['comments'])."'
+				  `comments`					=		'".addslashes($_POST['comments'])."'
 				  where pk_part_id = '".$_POST['part_hidden_id']."'";
 				  //echo $query;exit;
 			  $dbres = $this->db->query($query);
