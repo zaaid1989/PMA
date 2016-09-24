@@ -9,7 +9,7 @@
 </div>
 
 <ul class="page-breadcrumb breadcrumb">
-    <li> <a href="<?php echo base_url();?>">Home</a> <i class="fa fa-circle"></i> </li>
+    <li> Home  <i class="fa fa-circle"></i> </li>
     <li> <span class="active">Order Entry </span></li>
 </ul>
 <!-- END PAGE HEADER--> 

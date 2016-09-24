@@ -18,8 +18,7 @@
                   <div class="caption"> <i class="icon-shuffle"></i>Categories </div>
                   <div class="tools"> 
                       <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> 
+                      
                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>

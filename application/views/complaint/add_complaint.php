@@ -3,9 +3,9 @@
           <h3 class="page-title"> Add Complaint <small>Register a new complaint</small> </h3>
           <div class="page-bar">
             <ul class="page-breadcrumb">
-              <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
+              <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-              <li> <a href="<?php echo base_url() . 'complaint'; ?>">Complaints</a> <i class="fa fa-angle-right"></i> </li>
+              <li> Complaints <i class="fa fa-angle-right"></i> </li>
     
               <li> Add Complaint </li>
               
@@ -21,8 +21,7 @@
                           <div class="caption"> <i class="fa fa-plus"></i>New Complaint </div>
                           <div class="tools"> 
                               <a href="javascript:;" class="collapse"> </a> 
-                              <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                              <a href="javascript:;" class="reload"> </a> 
+                              
                               <a href="javascript:;" class="remove"> </a> 
                           </div>
                         </div>

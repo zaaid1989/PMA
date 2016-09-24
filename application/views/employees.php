@@ -38,7 +38,7 @@
                     <h3 class="page-title"> Employees <small>Manage Employees </small> </h3>
                     <div class="page-bar">
                       <ul class="page-breadcrumb">
-                        <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+                        <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
                         <li> Employees </li>
                         
                       </ul>
@@ -52,7 +52,7 @@
                         <div class="portlet box green-sharp">
                           <div class="portlet-title">
                             <div class="caption"> <i class="fa fa-users"></i>Employees </div>
-                            <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                            <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
                           </div>
                           <div class="portlet-body">
                             <div class="table-toolbar">

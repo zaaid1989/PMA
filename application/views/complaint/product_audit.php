@@ -23,11 +23,11 @@ else $end_date = date('Y-m-d');
             <ul class="page-breadcrumb">
                 <li>
                     <i class="fa fa-home"></i>
-                    <a href="<?php echo base_url();?>">Home</a>
+                    Home 
                     <i class="fa fa-angle-right"></i>
                 </li>
                 <li>
-                    <a href="#">Product Audit</a>
+                    Product Audit
                     <i class="fa fa-angle-right"></i>
                 </li>
             </ul>

@@ -7,7 +7,7 @@
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
@@ -27,8 +27,7 @@
                   
                                 <div class="tools">
                                      <a href="javascript:;" class="collapse"> </a> 
-                                    <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                                    <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> 
+                                     <a href="javascript:;" class="remove"> </a> 
                                 </div>
                   
                               </div>
@@ -247,8 +246,7 @@
               
                             <div class="tools"> 
                               <a href="javascript:;" class="collapse"> </a> 
-                              <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                              <a href="javascript:;" class="reload"> </a> 
+                              
                               <a href="javascript:;" class="remove"> </a> 
                             </div>
               
@@ -632,7 +630,7 @@
             
                           <div class="caption"> <i class="fa fa-globe"></i>List of Customers not Visited in Last 30 Days</div>
             
-                          <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                          <div class="tools"> <a href="javascript:;" class="collapse"> </a>  <a href="javascript:;" class="remove"> </a> </div>
             
                         </div>
                         <div class="portlet-body">

@@ -8,7 +8,7 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
           <li> PM Statistics </li><!--<span class="display_your_varibal_here"></span>-->
 
@@ -73,8 +73,7 @@
                   <div class="caption"> <i class="icon-plane"></i>PM Statistics All Pakistan - Real Time</div>
                   <div class="tools"> 
                       <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> 
+                      
                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>
@@ -513,8 +512,7 @@
                   <div class="caption"> <i class="icon-plane"></i>PM Statistics <?php echo $office['office_name']; ?> - Real Time</div>
                   <div class="tools"> 
                       <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> 
+                      
                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>

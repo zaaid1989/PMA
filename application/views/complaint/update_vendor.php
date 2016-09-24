@@ -7,15 +7,15 @@
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <a href="<?php echo base_url();?>complaint/update_vendor">Vendor</a>
+                                Vendors
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <a href="<?php echo base_url();?>complaint/update_vendor">Update Vendor</a>
+                                Update Vendor
                             </li>
                         </ul>
                       
@@ -35,8 +35,7 @@
 
               <div class="tools"> 
                   <a href="javascript:;" class="collapse"> </a> 
-                  <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                  <a href="javascript:;" class="reload"> </a> 
+                  
                   <a href="javascript:;" class="remove"> </a> 
               </div>
 

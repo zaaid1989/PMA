@@ -40,7 +40,7 @@
                 <ul class="page-breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="<?php echo base_url();?>">Home</a>
+                        Home
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
@@ -58,7 +58,7 @@
                 <div class="portlet box purple">
                   <div class="portlet-title">
                     <div class="caption"> <i class="fa fa-globe"></i>Engineer Complaints View </div>
-                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
                   </div>
                   <div class="portlet-body">
                     <div class="table-toolbar">
@@ -317,7 +317,7 @@
                 <div class="portlet box yellow-zed">
                   <div class="portlet-title">
                     <div class="caption"> <i class="fa fa-globe"></i>Engineer Complaints (Pending Verification) </div>
-                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
                   </div>
                   <div class="portlet-body">
                     <div class="table-toolbar">
@@ -522,7 +522,7 @@
                 <div class="portlet box blue">
                   <div class="portlet-title">
                     <div class="caption"> <i class="fa fa-globe"></i>Engineer Complaints (Pending SPRF) </div>
-                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
                   </div>
                   <div class="portlet-body">
                     <div class="table-toolbar">
@@ -727,7 +727,7 @@
                 <div class="portlet box green-meadow">
                   <div class="portlet-title">
                     <div class="caption"> <i class="fa fa-globe"></i>Engineer Complaints (Closed) </div>
-                    <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                    <div class="tools"> <a href="javascript:;" class="collapse"> </a>  <a href="javascript:;" class="remove"> </a> </div>
                   </div>
                   <div class="portlet-body">
                     <div class="table-toolbar">

@@ -4,9 +4,9 @@
                     <h3 class="page-title"> Add <small>User</small> </h3>
                     <div class="page-bar">
                       <ul class="page-breadcrumb">
-                        <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
-                        <li> <a href="#">Users</a> <i class="fa fa-angle-right"></i> </li>
-                        <li> <a href="#">Add User</a> </li>
+                        <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
+                        <li> Users <i class="fa fa-angle-right"></i> </li>
+                        <li> Add User </li>
                       </ul>
                       
                     </div>
@@ -23,7 +23,7 @@
                               <div class="portlet box green">
                                 <div class="portlet-title">
                                   <div class="caption"> <i class="fa fa-gift"></i>Form Actions On Bottom </div>
-                                  <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                                  <div class="tools"> <a href="javascript:;" class="collapse"> </a>  <a href="javascript:;" class="remove"> </a> </div>
                                 </div>
                                 <div class="portlet-body form"> 
                                   <!-- BEGIN FORM-->

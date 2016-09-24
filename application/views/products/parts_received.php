@@ -28,11 +28,11 @@ Another entry will be done through this form, it will be the stock id against wh
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home 
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <a href="#">Parts Changed Report</a>
+                                Parts Changed Report
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>

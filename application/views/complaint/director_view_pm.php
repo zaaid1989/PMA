@@ -35,7 +35,7 @@ if ($total_pms_c > 1 ) {
                         <ul class="page-breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="<?php echo base_url();?>">Home</a>
+                        Home 
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
@@ -467,8 +467,7 @@ if ($total_pms_c > 1 ) {
                             <div class="caption"> <i class="fa icon-book-open"></i>Director PM (Pending Verification)</div>
                             <div class="tools"> 
                             	<a href="javascript:;" class="collapse"> </a> 
-                                <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                                <a href="javascript:;" class="reload"> </a> 
+                                
                                 <a href="javascript:;" class="remove"> </a> 
                              </div>
                           </div>
@@ -732,8 +731,7 @@ if ($total_pms_c > 1 ) {
                             <div class="caption"> <i class="fa icon-book-open"></i>Director PM (Completed)</div>
                             <div class="tools"> 
                             	<a href="javascript:;" class="collapse"> </a> 
-                                <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                                <a href="javascript:;" class="reload"> </a> 
+                                
                                 <a href="javascript:;" class="remove"> </a> 
                              </div>
                           </div>

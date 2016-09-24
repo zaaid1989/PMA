@@ -11,15 +11,15 @@ if (isset($_GET['equipment']))
             <ul class="page-breadcrumb">
                 <li>
                     <i class="fa fa-home"></i>
-                    <a href="<?php echo base_url();?>">Home</a>
+                    Home 
                     <i class="fa fa-angle-right"></i>
                 </li>
                 <li>
-                    <a href="#">Equipment</a>
+                    Equipment
                     <i class="fa fa-angle-right"></i>
                 </li>
                 <li>
-                    <a href="#">Update Equipment Location</a>
+                    Update Equipment Location
                 </li>
             </ul>
         </div>

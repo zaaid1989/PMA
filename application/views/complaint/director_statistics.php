@@ -615,8 +615,7 @@
                   <div class="caption"> <i class="fa fa-globe"></i>View Statistics SAP</div>
                   <div class="tools">
                        <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> 
+                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>
                 <div class="portlet-body">

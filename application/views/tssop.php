@@ -9,8 +9,8 @@
 <h3 class="page-title"> SOP <small>TS Department</small> </h3>
 <div class="page-bar">
   <ul class="page-breadcrumb">
-    <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
-    <li> <a href="#">TS SOP</a> <i class="fa fa-angle-right"></i> </li>
+    <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
+    <li> TS SOP <i class="fa fa-angle-right"></i> </li>
   </ul>
   <div class="page-toolbar"> </div>
 </div>
@@ -22,7 +22,7 @@
     <div class="portlet box blue">
       <div class="portlet-title">
         <div class="caption"> <i class="fa fa-gift"></i>SOP TS Department </div>
-        <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> </div>
+        <div class="tools"> </div>
       </div>
       <div class="portlet-body">
         <div id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">

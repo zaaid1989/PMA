@@ -8,9 +8,9 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="<?php echo base_url() . 'complaint/director_view_pm'; ?>">View PMs</a> <i class="fa fa-angle-right"></i> </li>
+          <li> PMs <i class="fa fa-angle-right"></i> </li>
 
           <li> Update PM </li>
 
@@ -36,8 +36,7 @@
 
                     <div class="tools"> 
                     	<a href="javascript:;" class="collapse"> </a> 
-                        <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                        <a href="javascript:;" class="reload"> </a> 
+                        
                         <a href="javascript:;" class="remove"> </a> 
                     </div>
 

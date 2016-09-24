@@ -8,11 +8,11 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="#">Data Tables</a> <i class="fa fa-angle-right"></i> </li>
+          <li> PEF <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="#">Managed Datatables</a> </li>
+          
 
         </ul>
 
@@ -58,7 +58,7 @@
 
               <div class="caption"> <i class="fa fa-globe"></i>Managed Table </div>
 
-              <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+              <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
 
             </div>
 

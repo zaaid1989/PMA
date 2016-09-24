@@ -3,7 +3,7 @@
             <h3 class="page-title"> Vendors <small>Manage Vendors for Products</small> </h3>
             <div class="page-bar">
               <ul class="page-breadcrumb">
-                <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+                <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
                 <li> Vendors </li>
               </ul>
               
@@ -18,8 +18,7 @@
                     <div class="caption"> <i class="icon-eye"></i>Vendors </div>
                     <div class="tools"> 
                     	<a href="javascript:;" class="collapse"> </a> 
-                        <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                        <a href="javascript:;" class="reload"> </a> 
+                        
                         <a href="javascript:;" class="remove"> </a> 
                     </div>
                   </div>

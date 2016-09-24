@@ -38,15 +38,15 @@ $count_working_details	=	0;
         <ul class="page-breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="<?php echo base_url();?>">Home</a>
+                        Home
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="<?php echo base_url();?>complaint/engineer_view_complaints">My Complaints</a>
+                        Complaints
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="#">TS Report</a>
+                        TS Report
                     </li>
                 </ul>
 
@@ -112,8 +112,7 @@ $count_working_details	=	0;
 
               <div class="tools">
                    <a href="javascript:;" class="collapse"> </a> 
-                  <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                  <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> 
+                   <a href="javascript:;" class="remove"> </a> 
               </div>
 
             </div>
@@ -616,10 +615,7 @@ $count_working_details	=	0;
 								<div class="tools">
 									<a href="javascript:;" class="collapse">
 									</a>
-									<a href="#portlet-config" data-toggle="modal" class="config">
-									</a>
-									<a href="javascript:;" class="reload">
-									</a>
+									
 									<a href="javascript:;" class="remove">
 									</a>
 								</div>
@@ -816,10 +812,7 @@ $count_working_details	=	0;
 								<div class="tools">
 									<a href="javascript:;" class="collapse">
 									</a>
-									<a href="#portlet-config" data-toggle="modal" class="config">
-									</a>
-									<a href="javascript:;" class="reload">
-									</a>
+									
 									<a href="javascript:;" class="remove">
 									</a>
 								</div>

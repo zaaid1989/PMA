@@ -48,8 +48,7 @@ if ($sap_supervisor=="1" && $this->session->userdata('territory') =="1") //For P
                   <div class="caption"> <i class="icon-plane"></i>Leaves Data </div>
                   <div class="tools"> 
                       <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> 
+                      
                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>

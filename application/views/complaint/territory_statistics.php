@@ -19,7 +19,7 @@ $(window).load(function() {
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
           <li> FSE Tasks Statistics </li><!--<span class="display_your_varibal_here"></span>-->
 
@@ -498,8 +498,7 @@ for($j=1;$j<=2;$j++) {
                   <div class="caption"> <i class="icon-plane"></i><?php echo 'FSE '. $complaint_type. ' Statistics -'. $statisticts_territory.' ';  ?> - Real Time</div>
                   <div class="tools"> 
                       <a href="javascript:;" class="collapse"> </a> 
-                      <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                      <a href="javascript:;" class="reload"> </a> 
+                      
                       <a href="javascript:;" class="remove"> </a> 
                   </div>
                 </div>

@@ -6,11 +6,11 @@
                         <ul class="page-breadcrumb">
                     <li>
                         <i class="fa fa-home"></i>
-                        <a href="<?php echo base_url();?>">Home</a>
+                        Home
                         <i class="fa fa-angle-right"></i>
                     </li>
                     <li>
-                        View Complaints (Operator)
+                        View Complaints 
                     </li>
                     
                 </ul>
@@ -25,8 +25,7 @@
                             <div class="caption"> <i class="fa icon-book-open"></i>View Half Complaints </div>
                             <div class="tools"> 
                             	<a href="javascript:;" class="collapse"> </a> 
-                                <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                                <a href="javascript:;" id="reloadd" class="reload"> </a> 
+                                
                                 <a href="javascript:;" class="remove"> </a> 
                              </div>
                           </div>

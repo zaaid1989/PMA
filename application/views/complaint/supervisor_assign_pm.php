@@ -8,9 +8,9 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="<?php echo base_url();?>complaint/supervisor_assign_pm">Preventive Maintenance</a> </li><!--<span class="display_your_varibal_here"></span>-->
+          <li> Preventive Maintenance </li><!--<span class="display_your_varibal_here"></span>-->
 
           
 

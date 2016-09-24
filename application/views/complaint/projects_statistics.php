@@ -3,7 +3,7 @@
         <h3 class="page-title"> Projects Statistics <small>Employees and City Wise Statistics for Projects</small> </h3>
         <div class="page-bar">
           <ul class="page-breadcrumb">
-            <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+            <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
             <li> Projects Statistics </li>
             
           </ul>
@@ -18,7 +18,7 @@
 			<div class="portlet light bg-inverse">
               <div class="portlet-title">
                 <div class="caption font-red-intense"> <i class="icon-bar-chart font-red-intense"></i>Projects Statistics for Employees</div>
-                <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
               </div>
               <div class="portlet-body">
                 <div class="table-toolbar">
@@ -155,8 +155,7 @@
                 <div class="caption font-green-haze"> <i class="icon-bar-chart font-green-haze"></i>Projects Statistics for Cities</div>
                 <div class="tools"> 
                     <a href="javascript:;" class="collapse"> </a> 
-                    <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                    <a href="javascript:;" class="reload"> </a> 
+                    
                     <a href="javascript:;" class="remove"> </a> 
                 </div>
               </div>

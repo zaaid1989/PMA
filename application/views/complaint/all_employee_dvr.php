@@ -7,7 +7,7 @@
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home 
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
@@ -30,7 +30,7 @@
               
                             <div class="caption"> <i class="icon-layers"></i>Daily Visit Reports Overview</div>
               
-                            <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="#portlet-config" data-toggle="modal" class="config"> </a> <a href="javascript:;" class="reload"> </a> <a href="javascript:;" class="remove"> </a> </div>
+                            <div class="tools"> <a href="javascript:;" class="collapse"> </a> <a href="javascript:;" class="remove"> </a> </div>
               
                           </div>
               

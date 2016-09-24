@@ -32,11 +32,11 @@ $zquery="select business_data.*,tbl_project_strategy.*,tbl_clients.client_name,t
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home 
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <a href="#">Business Projects</a>
+                                Business Projects
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>

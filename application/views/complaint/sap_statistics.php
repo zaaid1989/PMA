@@ -648,7 +648,7 @@ Different from director statistics because that is for last 30 days running
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="fa fa-home"></i>
-                                <a href="<?php echo base_url();?>">Home</a>
+                                Home 
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>

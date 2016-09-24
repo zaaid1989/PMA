@@ -8,11 +8,11 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="#">Category</a> <i class="fa fa-angle-right"></i> </li>
+          <li> Categories <i class="fa fa-angle-right"></i> </li>
 
-          <li> <a href="#">Update Category</a> </li>
+          <li> Update Category </li>
 
         </ul>
 
@@ -48,8 +48,7 @@
 
                     <div class="tools"> 
                     	<a href="javascript:;" class="collapse"> </a> 
-                        <a href="#portlet-config" data-toggle="modal" class="config"> </a> 
-                        <a href="javascript:;" class="reload"> </a> 
+                        
                         <a href="javascript:;" class="remove"> </a> 
                     </div>
 

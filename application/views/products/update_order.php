@@ -18,7 +18,7 @@ function dispzero($val) {
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="<?php echo base_url();?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home  <i class="fa fa-angle-right"></i> </li>
 
           <li> <a href="<?php echo site_url();?>products/parts_ordered">Parts Ordered</a> <i class="fa fa-angle-right"></i> </li>
 

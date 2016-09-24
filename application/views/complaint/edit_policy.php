@@ -19,7 +19,7 @@
 
         <ul class="page-breadcrumb">
 
-          <li> <i class="fa fa-home"></i> <a href="<?php echo base_url();?>">Home</a> <i class="fa fa-angle-right"></i> </li>
+          <li> <i class="fa fa-home"></i> Home  <i class="fa fa-angle-right"></i> </li>
 
           <li> <a href="<?php echo site_url();?>complaint/policies">Policies</a> <i class="fa fa-angle-right"></i> </li>
 
