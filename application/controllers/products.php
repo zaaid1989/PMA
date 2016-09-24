@@ -364,7 +364,7 @@ print_r('</pre>');
 												  fk_part_id='".$_POST['part_number']."',  
 												  date= '".$date."',
 												  order_number = '".$_POST['order_number']."',
-												  `comments` =	'".urlencode($_POST['comments'])."'"
+												  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
 		$email = "info@mypmaonline.com"	;									  
 		$subject = "Part Requisition";
@@ -486,10 +486,10 @@ print_r('</pre>');
 																			  invoice_date = '".$invoice_date."',
 																			  invoice_number = '".$_POST['invoice_number']."',
 																			  equipment_serial = '".$_POST['equipment_serial']."',
-																			  old_inventory_description = '".urlencode($_POST['old_inventory_description'])."',
+																			  old_inventory_description = '".addslashes($_POST['old_inventory_description'])."',
 																			  dc_type = '".$dc_type."',
 																			  dc_number = '".$dc_number."',
-																			  `comments` =	'".urlencode($_POST['comments'])."'"
+																			  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
 		//} // end of else
 		
@@ -530,11 +530,11 @@ print_r('</pre>');
 																			  fk_complaint_id= '".$_POST['fk_complaint_id']."',
 																			  date= '".$date."',
 																 			  equipment_serial = '".$_POST['equipment_serial']."',
-																			  old_inventory_description = '".urlencode($_POST['part_condition'])."',
+																			  old_inventory_description = '".addslashes($_POST['part_condition'])."',
 																			  dc_type = '".$dc_type."',
 																			  dc_number = '".$dc_number."',
 																			  fk_stock_id = '".$_POST['fk_stock_id']."',
-																			  `comments` =	'".urlencode($_POST['comments'])."'"
+																			  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
               redirect(site_url() . 'complaint/spare_parts_changed_report?msg=old_stock');
     }
@@ -573,7 +573,7 @@ print_r('</pre>');
 																			  dc_type = '".$dc_type."',
 																			  dc_number = '".$dc_number."',
 																			  in_status = 'approved',
-																			  `comments` =	'".urlencode($_POST['comments'])."'"
+																			  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
 												  
 				///////////////////////// *************************** GET highest DC OUT Number
@@ -590,7 +590,7 @@ print_r('</pre>');
 																			  stock_type = 'Office Trasnfer',
 																			  dc_type = 'out',
 																			  dc_number = '".$dc_number."',
-																			  `comments` =	'".urlencode($_POST['comments'])."'"
+																			  `comments` =	'".addslashes($_POST['comments'])."'"
 												  );
 												  
 				$query_ins   =     $this->db->query("insert into tbl_sprf set fk_complaint_id = 	'0',
@@ -602,7 +602,7 @@ print_r('</pre>');
 													  fk_part_id	  = 	'".$_POST['part_number']."',
 													  quantity	  	  = 	'".$_POST['stock_quantity']."',
 													  total		 	  = 	'".$_POST['stock_quantity']."',
-													  purpose	  	  = 	'".urlencode($_POST['comments'])."',
+													  purpose	  	  = 	'".addslashes($_POST['comments'])."',
 													  billing	  	  = 	'N/A',
 													  creation_time	  = 	'".$date."'"
 										  );
@@ -678,12 +678,12 @@ print_r('</pre>');
 		$query="insert  into `tbl_parts` SET 	
 				  `fk_vendor_id`				=		'".$_POST['vendor_name']."',
 				  `fk_product_id`				=		'".$_POST['product_name']."',
-				  `description`		    		=		'".urlencode($_POST['part_description'])."',
+				  `description`		    		=		'".addslashes($_POST['part_description'])."',
 				  
 				  `part_number`					=		'".$_POST['part_no']."',
 				  `minimum_quantity`			=		'".$_POST['minimum_qty']."',
 				  `unit_price`					=		'".$_POST['unit_price']."',
-				  `comments`					=		'".urlencode($_POST['comments'])."'";
+				  `comments`					=		'".addslashes($_POST['comments'])."'";
 			  $dbres = $this->db->query($query);
 	   
 	   //
@@ -1230,7 +1230,7 @@ print_r('</pre>');
 						 						WHERE pk_complaint_id='" . $_POST['complaint_id'] . "'";
 			$query=$this->db->query($updat_query);
 		}
-			$comment_query=$this->db->query("INSERT INTO tbl_comments SET comment=	'".urlencode($_POST['comment'])."', date= '".date('Y-m-d H:i:s')."', 
+			$comment_query=$this->db->query("INSERT INTO tbl_comments SET comment=	'".addslashes($_POST['comment'])."', date= '".date('Y-m-d H:i:s')."', 
 											 fk_complaint_id ='".$_POST['complaint_id']."', fk_employee_id='".$this->session->userdata('userid')."'");
 			if(isset($_POST['ts_report_director']))
 			{

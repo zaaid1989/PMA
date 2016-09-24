@@ -96,7 +96,7 @@ class Site extends CI_Controller {
 								  `fk_employee_id`				='".$user['id']."',
 								  `fk_fine_code_id`				='1',
 								  `amount`						='".$fa[0]['amount']."',
-								  `comments`					='".urlencode('System generated call')."',
+								  `comments`					='".addslashes(('System generated call')."',
 								  `status`						='Pending',
 								  `software_generated`			='1',
 								  `z`							='".$str."',

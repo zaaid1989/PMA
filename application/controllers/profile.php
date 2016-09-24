@@ -194,8 +194,8 @@ class Profile extends CI_Controller {
 				{
 					$query="insert into tbl_education_records SET 				
 								`fk_user_id`			=	'".$new_user_id."',
-								`degree`  				=	'".$_POST['ducument_degree'][$key]."',
-								`institute`				=	'".$_POST['document_board'][$key]."',
+								`degree`  				=	'".addslashes($_POST['ducument_degree'][$key])."',
+								`institute`				=	'".addslashes($_POST['document_board'][$key])."',
 								`year`					=	'".$_POST['document_years'][$key]."',
 								`marks`					=	'".$_POST['document_marks'][$key]."'
 							  ";
@@ -215,7 +215,7 @@ class Profile extends CI_Controller {
 								`fk_brand_id`				=	'".$_POST['training_equipment'][$key]."',
 								`start_date`				=	'".$this->profile_model->change_date_to_mysql_style($_POST['training_date_from'][$key])."',
 								`end_date`					=	'".$this->profile_model->change_date_to_mysql_style($_POST['training_date_to'][$key])."',
-								`location`					=	'".$_POST['training_location'][$key]."',
+								`location`					=	'".addslashes($_POST['training_location'][$key])."',
 								`bill_of_training`			=	'".$_POST['bill_of_training'][$key]."',
 								`expense`					=	'".$_POST['training_expence'][$key]."'
 							  ";
@@ -377,8 +377,8 @@ class Profile extends CI_Controller {
 				{
 					$query="insert into tbl_education_records SET 				
 								`fk_user_id`			=	'".$new_user_id."',
-								`degree`  				=	'".$_POST['ducument_degree'][$key]."',
-								`institute`				=	'".$_POST['document_board'][$key]."',
+								`degree`  				=	'".addslashes($_POST['ducument_degree'][$key])."',
+								`institute`				=	'".addslashes($_POST['document_board'][$key])."',
 								`year`					=	'".$_POST['document_years'][$key]."',
 								`marks`					=	'".$_POST['document_marks'][$key]."'
 							  ";
@@ -397,7 +397,7 @@ class Profile extends CI_Controller {
 								`fk_brand_id`				=	'".$_POST['training_equipment'][$key]."',
 								`start_date`				=	'".$this->profile_model->change_date_to_mysql_style($_POST['training_date_from'][$key])."',
 								`end_date`					=	'".$this->profile_model->change_date_to_mysql_style($_POST['training_date_to'][$key])."',
-								`location`					=	'".$_POST['training_location'][$key]."',
+								`location`					=	'".addslashes($_POST['training_location'][$key])."',
 								`bill_of_training`			=	'".$_POST['bill_of_training'][$key]."',
 								`expense`					=	'".$_POST['training_expence'][$key]."'
 							  ";
