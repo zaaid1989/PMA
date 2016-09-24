@@ -1,6 +1,6 @@
 <?php $this->load->view('header.php');?>
                     <!-- BEGIN PAGE HEADER-->
-                    <h3 class="page-title"> Products <small>List of PMA Product Range</small> </h3>
+                    <h3 class="page-title"> Products <small>List of Product Range</small> </h3>
                     <div class="page-bar">
                       <ul class="page-breadcrumb">
                         <li>

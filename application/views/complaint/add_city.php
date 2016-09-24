@@ -2,7 +2,7 @@
 
       <!-- BEGIN PAGE HEADER-->
 
-      <h3 class="page-title">  Add City <small>insert city in PMA database</small> </h3>
+      <h3 class="page-title">  Add City <small>insert city in database</small> </h3>
 
       <div class="page-bar">
 

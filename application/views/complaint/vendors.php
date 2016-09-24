@@ -1,6 +1,6 @@
 <?php $this->load->view('header');?>
             <!-- BEGIN PAGE HEADER-->
-            <h3 class="page-title"> Vendors <small>Manage Vendors for PMA's Products</small> </h3>
+            <h3 class="page-title"> Vendors <small>Manage Vendors for Products</small> </h3>
             <div class="page-bar">
               <ul class="page-breadcrumb">
                 <li> <i class="fa fa-home"></i> <a href="<?php echo site_url(); ?>">Home</a> <i class="fa fa-angle-right"></i> </li>

@@ -66,17 +66,17 @@
 					 </tr>
 					 
 					 <tr>
-					 <td>PMA CDR Requisition</td>
+					 <td>CDR Requisition</td>
 					 <td><button type="button" class="btn btn-default"><a href="<?php echo base_url()?>forms/Form - PMA CDR Requisition.xlsx" download>Download File</a></button></td>
 					 </tr>
 					 
 					 <tr>
-					 <td>PMA Leave Application - V9</td>
+					 <td>Leave Application - V9</td>
 					 <td><button type="button" class="btn btn-default"><a href="<?php echo base_url()?>forms/Form - PMA Leave Application - V9.docx" download>Download File</a></button></td>
 					 </tr>
 					 
 					 <tr>
-					 <td>PMA Purchase Requisition</td>
+					 <td>Purchase Requisition</td>
 					 <td><button type="button" class="btn btn-default"><a href="<?php echo base_url()?>forms/Form - PMA Purchase Requisition.xlsx" download>Download File</a></button></td>
 					 </tr>
 					 

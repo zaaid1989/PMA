@@ -2,7 +2,7 @@
 
       <!-- BEGIN PAGE HEADER-->
 
-      <h3 class="page-title">  Add Area <small>insert area in PMA database</small> </h3>
+      <h3 class="page-title">  Add Area <small>insert area in database</small> </h3>
 
       <div class="page-bar">
 

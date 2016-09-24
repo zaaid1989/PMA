@@ -1152,7 +1152,7 @@ $(document).ready(function() {
 					</center>
 					<h3 class="page-title" style="text-align:center;margin-top:35px;">
 			<?php } else echo '<h3 class="page-title" style="text-align:center;">	'; ?>
-                Welcome to PMA Online Management Portal
+                Welcome to Online Management Portal
                 <p><small>You last logged in from IP <span class="font-green-jungle" ><?php echo $rt21[0]['last_login_ip'];?></span></small>
                 <small> on <?php echo date('d-M-Y', strtotime($rt21[0]['last_login_date']));?></small>
                 <small> at <?php echo date('h:i A', strtotime($rt21[0]['last_login_date']));?></small>

@@ -3,7 +3,7 @@
 
       <!-- BEGIN PAGE HEADER-->
 
-      <h3 class="page-title">  New Policy <small>Add new policy for PMA employees</small> </h3>
+      <h3 class="page-title">  New Policy <small>Add new policy for employees</small> </h3>
 
       <div class="page-bar">
 

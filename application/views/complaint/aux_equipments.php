@@ -1,6 +1,6 @@
 <?php $this->load->view('header');?>
             <!-- BEGIN PAGE HEADER-->
-            <h3 class="page-title"> Auxiliary Equipments <small>Statistics and List of PMA's Auxiliary Equipments</small> </h3>
+            <h3 class="page-title"> Auxiliary Equipments <small>Statistics and List of Auxiliary Equipments</small> </h3>
             <div class="page-bar">
               <ul class="page-breadcrumb">
                    <li>

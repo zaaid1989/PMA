@@ -1,6 +1,6 @@
 <?php $this->load->view('header');?>
             <!-- BEGIN PAGE HEADER-->
-            <h3 class="page-title"> Equipments <small>Statistics and List of PMA's Equipments</small> </h3>
+            <h3 class="page-title"> Equipment <small>Statistics and List of Equipment</small> </h3>
             <div class="page-bar">
               <ul class="page-breadcrumb">
                    <li>
@@ -9,7 +9,7 @@
                       <i class="fa fa-angle-right"></i>
                   </li>
                   <li>
-                      Equipments
+                      Equipment
                   </li> 
               </ul>
               

@@ -2,7 +2,7 @@
 
       <!-- BEGIN PAGE HEADER-->
 
-      <h3 class="page-title">  New News <small>Add new news for PMA employees</small> </h3>
+      <h3 class="page-title">  New News <small>Add new news for employees</small> </h3>
 
       <div class="page-bar">
 
