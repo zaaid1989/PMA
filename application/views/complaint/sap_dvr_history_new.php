@@ -380,6 +380,6 @@ $(document).ready(function() {
 	  'iDisplayLength': 100
 	});
 	
-	new $.fn.dataTable.FixedColumns( table );
+	//new $.fn.dataTable.FixedColumns( table );
 });
 </script>

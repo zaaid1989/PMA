@@ -378,6 +378,6 @@ $("img").one("load", function() {
 			  'iDisplayLength': 800
 			});
 			
-			new $.fn.dataTable.FixedColumns( table );
+			//new $.fn.dataTable.FixedColumns( table );
 		});
 		</script>

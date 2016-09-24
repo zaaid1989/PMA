@@ -118,6 +118,6 @@ $(window).load(function() {
 			  'aaSorting': []
 			});
 			
-			new $.fn.dataTable.FixedColumns( table );
+			//new $.fn.dataTable.FixedColumns( table );
 		});
 		</script>

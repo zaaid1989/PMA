@@ -345,6 +345,6 @@ $(window).load(function() {
 			  'iDisplayLength': 200
 			});
 			
-			new $.fn.dataTable.FixedColumns( table );
+			//new $.fn.dataTable.FixedColumns( table );
 		});
 		</script>

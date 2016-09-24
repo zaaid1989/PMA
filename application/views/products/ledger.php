@@ -357,6 +357,6 @@ $(window).load(function() {
 			  'bAutoWidth':false
 			});
 			
-			new $.fn.dataTable.FixedColumns( table );
+			//new $.fn.dataTable.FixedColumns( table );
 		});
 		</script>
