@@ -3,7 +3,7 @@
 class Complaint extends CI_Controller {
 
 	/**
-	 * Index Page for this controller.
+	 * Index Page for this controller. u
 	 */
 	function __construct() 
 	{
