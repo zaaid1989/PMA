@@ -186,7 +186,7 @@
                                             <div class="row">
                                                 <div class="col-md-offset-3 col-md-9">
                                                     <button type="submit" class="btn green">Add</button>
-                                                    <button type="reset" class="btn default">Cancel</button>
+                                                    <!--<button type="reset" class="btn default">Cancel</button>-->
                                                 </div>
                                             </div>
                                         </div>

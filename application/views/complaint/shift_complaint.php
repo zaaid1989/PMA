@@ -110,7 +110,7 @@
                                 <div class="col-md-offset-7 col-md-5">
                                 <input type="hidden" name="complaint_id" value="<?php echo $this->uri->segment('3'); ?>">
                                     <button type="submit" class="btn purple">Submit</button>
-									<a href="<?php echo site_url();?>complaint/director_view_complaints" class="btn default">Cancel</a>
+							<!--		<a href="<?php echo site_url();?>complaint/director_view_complaints" class="btn default">Cancel</a> -->
                                 </div>
                             </div>
                         </div>

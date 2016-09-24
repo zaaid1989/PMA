@@ -366,7 +366,7 @@ thead select {
                                                         <button type="submit" class="btn red-thunderbird" >
                                                         	Delete
                                                         </button>
-                                                        <button type="button" class="btn default" data-dismiss="modal">Cancel</button>
+                                                <!--        <button type="button" class="btn default" data-dismiss="modal">Cancel</button> -->
                                                     </div>
                                                 </div>
                                             </div>

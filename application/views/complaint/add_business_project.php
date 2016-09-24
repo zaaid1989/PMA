@@ -371,11 +371,13 @@
                 <div class="col-md-offset-3 col-md-9">
 				<input type="hidden" name="redirect_customer" value="<?php echo $redirect_customer;?>" />
                   <button type="submit" class="btn default yellow-crusta">Submit</button>
+				  <!--
 				  <?php if ($redirect_customer=="no"){  ?>
                   <a href="<?php echo site_url();?>complaint/business_data" class="btn default">Cancel</a>
 				   <?php } else {?>
 				   <a href="<?php echo site_url();?>complaint/edit_customer/<?php echo $this->uri->segment(3);?>" class="btn default">Cancel</a>
 				    <?php }  ?>
+					-->
                 </div>
               </div>
             </div>

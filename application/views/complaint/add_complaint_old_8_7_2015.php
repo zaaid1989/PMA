@@ -437,6 +437,7 @@
                               <div class="row">
                                 <div class="col-md-offset-3 col-md-9">
                                   <button type="submit" class="btn green-seagreen">Submit</button>
+								  <!--
 								  <a href="<?php echo site_url();?><?php
 								  if ($this->uri->segment('3')=='o')
 									echo "complaint/operator_view_complaints";
@@ -447,6 +448,7 @@
 								  ?>
 								  " 
 								  class="btn default">Cancel</a>
+								  -->
                                 </div>
                               </div>
                             </div>

@@ -104,7 +104,7 @@
                                 <div class="col-md-offset-6 col-md-6">
                                     <input type="hidden" name="pk_city_id" value="<?php echo $this->uri->segment(3); ?>">
                                     <button type="submit" class="btn yellow">Submit</button>
-                                    <a href="<?php echo site_url();?>complaint/cities" class="btn default">Cancel </a>
+                               <!--     <a href="<?php echo site_url();?>complaint/cities" class="btn default">Cancel </a> -->
                                 </div>
                             </div>
                         </div>

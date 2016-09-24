@@ -221,7 +221,7 @@
                   <div class="row">
                     <div class="col-md-offset-3 col-md-9">
                       <button type="submit" class="btn default green" onclick="return check_amount();">Submit</button><!--onclick="return check_amount();"-->
-                      <a href="<?php echo base_url();?>complaint/all_leaves" class="btn default grey">Cancel</a>
+                     <!-- <a href="<?php echo base_url();?>complaint/all_leaves" class="btn default grey">Cancel</a> -->
                     </div>
                   </div>
                 </div>

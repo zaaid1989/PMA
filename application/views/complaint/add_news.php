@@ -120,7 +120,7 @@
                             <div class="row">
                                 <div class="col-md-offset-6 col-md-6">
                                     <button type="submit" class="btn default yellow-zed">Submit</button>
-									<a href="<?php echo site_url();?>complaint/news" class="btn default">Cancel</a>
+							<!--		<a href="<?php echo site_url();?>complaint/news" class="btn default">Cancel</a> -->
                                 </div>
                             </div>
                         </div>

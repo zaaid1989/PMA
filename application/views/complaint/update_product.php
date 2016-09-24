@@ -170,7 +170,7 @@
                                 <div class="col-md-offset-3 col-md-9">
                                     <input type="hidden" name="pk_product_id" value="<?php echo $this->uri->segment(3); ?>">
                                     <button type="submit" class="btn green">Submit</button>
-                                    <button type="button" class="btn default">Cancel</button>
+                               <!--     <button type="button" class="btn default">Cancel</button> -->
                                 </div>
                             </div>
                         </div>

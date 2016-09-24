@@ -95,7 +95,7 @@
       <div class="row">
         <div class="col-md-offset-5 col-md-9">
           <button type="submit" class="btn btn-circle blue" onclick="return check_amount();">Submit</button>
-          <button type="button" class="btn btn-circle default">Cancel</button>
+        <!--	  <button type="button" class="btn btn-circle default">Cancel</button> -->
         </div>
       </div>
     </div>

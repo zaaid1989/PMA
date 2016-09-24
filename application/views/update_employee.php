@@ -881,7 +881,7 @@
 												<button type="submit" class="btn green button-submit">
 												Submit <i class="m-icon-swapright m-icon-white"></i>
 												</button>
-												<a href="<?php echo site_url();?>profile/get_employees" class="btn default">Cancel</a>
+											<!--	<a href="<?php echo site_url();?>profile/get_employees" class="btn default">Cancel</a> -->
 											</div>
 										</div>
 									</div>

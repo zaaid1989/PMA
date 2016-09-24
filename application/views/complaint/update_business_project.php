@@ -371,12 +371,13 @@ if (isset($_GET['approve_strategy'])) {
 				}
 				?>
 				  
-				  
+				  <!--
 				  <?php if ($this->session->userdata('userrole')!="Salesman" && !isset($_GET['approve_strategy'])) { if ($redirect_customer=="no"){  ?>
                   <a href="<?php echo site_url();?>complaint/business_data" class="btn default">Cancel</a>
 				  <?php } else {?>
 				   <a href="<?php echo site_url();?>complaint/edit_customer/<?php echo $customer_id;?>" class="btn default">Cancel</a>
 				  <?php }  } ?>
+				  -->
                 </div>
               </div>
             </div>

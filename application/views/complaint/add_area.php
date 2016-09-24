@@ -93,7 +93,7 @@
                             <div class="row">
                                 <div class="col-md-offset-6 col-md-6">
                                     <button type="submit" class="btn yellow">Submit</button>
-                                    <a href="<?php echo base_url() . 'complaint/areas'; ?>" class="btn default">Cancel</a>
+                                 <!--   <a href="<?php echo base_url() . 'complaint/areas'; ?>" class="btn default">Cancel</a> -->
                                 </div>
                             </div>
                         </div>

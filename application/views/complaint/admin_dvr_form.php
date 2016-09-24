@@ -433,7 +433,7 @@
               <div class="row">
                 <div class="col-md-offset-3 col-md-9">
                   <button type="submit" class="btn blue" onclick="return check_range()">Submit</button>
-                  <a href="<?php echo base_url(); ?>" class="btn default">Cancel</a>
+                <!--  <a href="<?php echo base_url(); ?>" class="btn default">Cancel</a> -->
                 </div>
               </div>
             </div>

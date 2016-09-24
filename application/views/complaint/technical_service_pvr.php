@@ -1280,7 +1280,7 @@ $count_working_details	=	0;
                         <div class="col-md-12">
                             <div class="row">
 					<div class="col-md-offset-10 col-md-2">
-                        <button type="button" class="btn default">Cancel</button>
+                       <!-- <button type="button" class="btn default">Cancel</button> -->
                         <button type="submit" class="btn blue" onclick="return check_status('<?php echo $get_compalaint_result[0]['status'];  ?>')">
                         <input type="hidden" id="complaint_status" value="<?php echo $get_compalaint_result[0]['status'];?>" />
                         	<i class="fa fa-check"></i> Save

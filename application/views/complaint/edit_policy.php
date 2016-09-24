@@ -126,7 +126,7 @@
                                 <div class="col-md-offset-6 col-md-6">
 								<input type="hidden"  name="pk_policy_id" value="<?php echo $pk_policy_id; ?>">
                                     <button type="submit" class="btn default yellow-zed">Submit</button>
-									<a href="<?php echo site_url();?>complaint/policies" class="btn default">Cancel</a>
+							<!--		<a href="<?php echo site_url();?>complaint/policies" class="btn default">Cancel</a> -->
                                 </div>
                             </div>
                         </div>

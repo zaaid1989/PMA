@@ -283,7 +283,7 @@
                             <input type="hidden" name="complaint_id" value="<?php echo $this->uri->segment(3);?>" />
                             <button type="submit" class="btn btn-circle blue">Submit</button>
 
-                            <button type="button" class="btn btn-circle default">Cancel</button>
+                      <!--      <button type="button" class="btn btn-circle default">Cancel</button> -->
 
                           </div>
 

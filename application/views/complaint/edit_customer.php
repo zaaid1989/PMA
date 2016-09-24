@@ -308,8 +308,8 @@ function Get_Date_Difference($start_date, $end_date)
 
                             <button type="submit" class="btn btn-lg default green">Save <i class="fa fa-check"></i></button>
 
-                            <a href="<?php echo site_url();?>complaint/customers_view" class="btn btn-lg default">Cancel <i class="fa fa-times"></i></a>
-
+                         <!--   <a href="<?php echo site_url();?>complaint/customers_view" class="btn btn-lg default">Cancel <i class="fa fa-times"></i></a>
+							-->
                           </div>
 
                         </div>
@@ -628,7 +628,7 @@ function Get_Date_Difference($start_date, $end_date)
                                                         <button type="submit" class="btn red-thunderbird" >
                                                         	Delete
                                                         </button>
-                                                        <button type="button" class="btn default" data-dismiss="modal">Cancel</button>
+                                            <!--            <button type="button" class="btn default" data-dismiss="modal">Cancel</button> -->
                                                     </div>
                                                 </div>
                                             </div>

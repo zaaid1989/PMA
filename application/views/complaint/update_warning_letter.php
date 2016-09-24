@@ -84,7 +84,7 @@
                   <div class="col-md-offset-5 col-md-9">
                     <input type="hidden" name="pk_warning_letter_id" value="<?php echo $value[0]['pk_warning_letter_id']; ?>" />
                     <button type="submit" class="btn btn-circle blue">Submit</button>
-                    <button type="button" class="btn btn-circle default">Cancel</button>
+                 <!--   <button type="button" class="btn btn-circle default">Cancel</button> -->
                   </div>
                 </div>
               </div>

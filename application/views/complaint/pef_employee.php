@@ -987,7 +987,7 @@
                                     <?php //echo 'due_date = '.$due_date.' and current_date='.$current_date; ?>
                                     <button  <?php if($due_date > $current_date){?>type="submit"<?php  } else {?>type="button"  onclick="alert('Date expired')"<?php  }?> 
                                     class="btn green ifemptyselect">Save</button>
-                                    <button type="button" class="btn default">Cancel</button>
+                             <!--       <button type="button" class="btn default">Cancel</button> -->
                                     <script>
 									$(document).ready( function(){
 										$('.ifemptyselect').click( function() {

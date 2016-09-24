@@ -281,7 +281,7 @@
                             
 							<button type="submit" class="btn btn-lg default green">Save <i class="fa fa-check"></i></button>
 
-                            <a href="<?php echo site_url();?>complaint/customers_view" class="btn btn-lg default">Cancel <i class="fa fa-times"></i></a>
+                      <!--      <a href="<?php echo site_url();?>complaint/customers_view" class="btn btn-lg default">Cancel <i class="fa fa-times"></i></a> -->
 
                           </div>
 
