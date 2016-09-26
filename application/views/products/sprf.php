@@ -10,7 +10,7 @@
 	$product_name_au = "";
 ?>
 
-<h3 class="page-title"> Spare Parts Requisition Form <small>form layouts</small> </h3>
+<h3 class="page-title"> Spare Parts Requisition Form </h3>
 
       <div class="page-bar">
 
@@ -18,7 +18,7 @@
 
           <li> <i class="fa fa-home"></i> Home <i class="fa fa-angle-right"></i> </li>
 
-          <li> SPRF <i class="fa fa-angle-right"></i> </li>
+          <li> SPRF  </li>
 
         </ul>
 
@@ -38,17 +38,7 @@
 
         <div class="col-md-12">
 
-          <div class="tabbable tabbable-custom boxless tabbable-reversed">
-
-            <ul class="nav nav-tabs">
-
-              <li class="active"> <a href="#tab_0" data-toggle="tab"> SPRF </a> </li>
-
-            </ul>
-
-            <div class="tab-content">
-
-              <div class="tab-pane active" id="tab_0">
+          
 
                 <div class="portlet box green">
 
@@ -65,7 +55,13 @@
 						$sprf_count		=	0;
 						$product_id		=	0; // will be defined later
 						$office_id		=	$this->session->userdata('territory');
-						$dbres 			= 	$this->db->query("SELECT * FROM tbl_complaints where pk_complaint_id = '".$this->uri->segment(3)."'");
+						$dbres 			= 	$this->db->query("SELECT tbl_complaints.*, user.first_name, tbl_cities.city_name,tbl_products.product_name, tbl_products.pk_product_id, tbl_instruments.serial_no  
+														FROM tbl_complaints 
+														LEFT JOIN user ON tbl_complaints.assign_to = user.id
+														LEFT JOIN tbl_cities ON tbl_complaints.fk_city_id = tbl_cities.pk_city_id
+														LEFT JOIN tbl_instruments ON tbl_complaints.fk_instrument_id = tbl_instruments.pk_instrument_id
+														LEFT JOIN tbl_products ON tbl_instruments.fk_product_id = tbl_products.pk_product_id
+														where pk_complaint_id = '".$this->uri->segment(3)."'");
 						$dbresResult	=	$dbres->result_array();
 						foreach ($dbresResult as $k ) {
 							$ts_number				 = 	$k['ts_number'];
@@ -75,6 +71,7 @@
 							$fk_city_id 			 = 	$k['fk_city_id'];
 							$fk_instrument_id 		 = 	$k['fk_instrument_id'];
 							$status					 =	$k['status'];
+							$product_id				 =	$k['pk_product_id'];
 						}
 						//$status="Pending SPRF";
 						
@@ -118,13 +115,13 @@
 
                           <div class="col-md-4">
 
-                            <input type="text" class="form-control " value="<?php $ty=$this->db->query("select * from user where id='".$get_complaint_list[0]["assign_to"]."'");
+                            <input type="text" class="form-control " value="<?php /*$ty=$this->db->query("select * from user where id='".$get_complaint_list[0]["assign_to"]."'");
 													  if($ty->num_rows()>0)
 														{
 														  $rt=$ty->result_array();
 														  echo $rt[0]["first_name"];
-														}
-													  //echo $get_complaint_list[0]["assign_to"];?>" readonly name="assign_ts_person" >
+														}*/
+													  echo $dbresResult[0]["first_name"];?>" readonly name="assign_ts_person" >
 
                           </div>
 
@@ -149,10 +146,12 @@
                           <div class="col-md-4">
 
                             <?php
+							/*
                             	$we= $this->db->query("select * from tbl_cities where pk_city_id ='".$fk_city_id."'");
 								$rt=$we->result_array();
+								*/
 							?>
-                            <input type="text" class="form-control " value="<?php echo $rt[0]['city_name'];?>" readonly name="city" >
+                            <input type="text" class="form-control " value="<?php echo $dbresResult[0]["city_name"];//echo $rt[0]['city_name'];?>" readonly name="city" >
 
                           </div>
 
@@ -165,6 +164,7 @@
                           <div class="col-md-4">
 
                             <?php
+							/*
                             	$we2= $this->db->query("select * from tbl_instruments where pk_instrument_id ='".$fk_instrument_id."'");
 								$rt2=$we2->result_array();
 								$product_id	=	$rt2[0]['fk_product_id']; //
@@ -173,11 +173,11 @@
 									$query = $this->db->query("select * from tbl_products where pk_product_id ='".$rt2[0]['fk_product_id']."'");
 									$query_results=$query->result_array();
 								}
-								
+								*/
 							?>
-                            <input type="text" class="form-control " value="<?php if(isset($query_results[0]['product_name'])){echo $query_results[0]['product_name'];
-							$product_name_au = $query_results[0]['product_name'];
-							}?>" 
+                            <input type="text" class="form-control " value="<?php if(isset($dbresResult[0]['product_name'])){echo $dbresResult[0]['product_name'];
+							//$product_name_au = $query_results[0]['product_name'];
+							} ?>" 
                             readonly name="instrument_model" >
 
                           </div>
@@ -190,7 +190,7 @@
 
                           <div class="col-md-4">
 
-                            <input type="text" class="form-control "  value="<?php if(isset($rt2[0]['serial_no'])){echo $rt2[0]['serial_no'];}?>" 
+                            <input type="text" class="form-control "  value="<?php if(isset($dbresResult[0]['serial_no'])){echo $dbresResult[0]['serial_no'];}?>" 
                             readonly name="insturment_serial_number" >
 
                           </div>
@@ -397,17 +397,25 @@
                 <tbody class="append_tbody">
 
                   <?php  
-						$we= $this->db->query("select * from tbl_sprf where `status`='0' AND fk_complaint_id='".$this->uri->segment(3)."' ");
+						$we= $this->db->query("select tbl_sprf.*,tbl_parts.* from tbl_sprf 
+						LEFT JOIN tbl_parts ON tbl_sprf.fk_part_id = tbl_parts.pk_part_id 
+						where tbl_sprf.`status`='0' AND fk_complaint_id='".$this->uri->segment(3)."' ");
 						
 						  $rt=$we->result_array();
 						  $sprf_count	=	sizeof($rt);
 						  foreach($rt as $sprf)
 						  {
+								$part_number	=	$sprf['part_number'];
+								$description	=	$sprf['description'];
+								$unit_price		=	$sprf['unit_price'];
+								$image 			=	$sprf['image'];
+								$part_id		=	$sprf['pk_part_id'];
 						 ?>
                           <tr class="odd gradeX" id="rowfirst">
         
                             <td> <!-- Part Number -->
                             <?php
+							/*
 							$ghq="select * from tbl_parts where pk_part_id='".$sprf['fk_part_id']."'";
 							//echo $ghq;exit;
                             $we2	= 	$this->db->query($ghq);
@@ -419,7 +427,7 @@
 								$unit_price		=	$part_data['unit_price'];
 								$image 			=	$part_data['image'];
 								$part_id		=	$part_data['pk_part_id'];
-							}
+							}*/
 							?>
                                <input name="part[]" type="text" readonly="readonly" value="<?php echo $part_number;?>" class="form-control" style="display:none;"/>
                             <?php echo $part_number;?>
@@ -452,21 +460,20 @@
         
                             <td> <!-- Stock -->
 							<?php 
-                              $stock = $this->db->query("select * from tbl_stock where  fk_part_id='".$sprf['fk_part_id']."' AND (dc_type='out' OR (dc_type='in' AND in_status='approved'))");
-                                    if($stock->num_rows()>0)
+                              $stock = $this->db->query("select SUM(stock) AS `total_stock`  from tbl_stock where  fk_part_id='".$sprf['fk_part_id']."' AND (dc_type='out' OR (dc_type='in' AND in_status='approved'))");
+							  $stock_result = $stock->result_array();
+                                   /* if($stock->num_rows()>0)
                                     {
-                                        $stock_result = $stock->result_array();
                                         $stock_total=0;
                                         foreach($stock_result as $total_stock)
                                         {
                                             $stock_total= $stock_total + $total_stock['stock'];
                                         }
                                         echo $stock_total;
-                                    }
-                                    else
-                                    {
-                                        echo '0';
-                                    }
+                                    }*/
+									if (isset($stock_result[0]['total_stock'])) echo $stock_result[0]['total_stock'];
+                                    else  echo '-';
+                                    
                             ?>
                               <?php 
                                 //The data for blow table will be fetched form tbl_stock according to the part selected from the second drop-down in above form
@@ -771,11 +778,7 @@
                   </div>
 
                 </div>
-			   <div>
-
-            </div>
-
-          </div>
+			   
 
         </div>
 
